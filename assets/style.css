@@ -1,0 +1,118 @@
+body{
+	margin: 0;
+	background-image: url("media/jpcBG.png");
+	/*background-color: "gray";*/
+	
+}
+img{
+	margin-left: 0;
+	padding: 0;
+	float: right;
+	position: absolute;
+	left: 260px;
+	top: 20px;
+	
+}
+img#avatar{
+	border-radius: 50%;
+	position: absolute;
+	left: 25px;
+	z-index: 5;
+	
+}
+nav{
+	margin: 0;
+	color: #AAAAAA;
+	font-family: "TheLightFont", arial;
+	font-size: 240%;
+	background-color: rgba(0,0,0,80);
+	display:inline-block;
+	position: absolute;
+	width: 220px;
+	top: 0;
+	bottom: 0;
+	border-left: solid 5px #FFFFFF;
+	border-right: solid 5px #FFFFFF;
+	padding-top: 210px;
+	padding-bottom: 35%;
+	
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li{
+	display: block;
+	margin: 0;
+	padding: 20px 40px 25px 40px;
+	transition: background-color .3s, border-left .3s;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #AAAAAA;
+}
+nav ul a{
+	text-decoration: none;
+	color: #AAAAAA;
+}
+nav ul li:hover{
+	background-color: #333333;
+	border-left: solid 6px #FFFFCC;
+	text-decoration: none;
+	
+}
+nav ul > ul{
+	opacity: 0;
+	height: 0;
+	z-index: 0;
+	visibility: hidden;
+	/* transition-duration: .4s; */
+	transform: translateY(-15px);
+	transition: all .4s;
+	padding: 0;
+	margin: 0;
+	color: #EEAAAA;
+	font-size: 60%;
+	
+	
+	
+}
+.appearing{
+	/* z-index: 0; */
+	height: auto;
+	visibility: visible;
+	transform: translateY(0%);
+	opacity: 1;
+	
+}
+
+
+nav ul > ul li{
+	
+	color: #EEAAAA;
+	margin-left: 30px;
+	
+}
+
+object#resume{
+	position: absolute;
+	left: 500px;
+	top: 150px;
+
+}	
+li.parent{
+	background-image: url("media/dropdown.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+
+
+
+@font-face{
+font-family:"TheLightFont";
+
+src: url("font/TheLightFont.otf");	
+	
+}
